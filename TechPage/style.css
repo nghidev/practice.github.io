@@ -1,0 +1,45 @@
+*{
+  margin: 0;  
+  padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+#nav-bar{
+    position:sticky;
+}
+.navbar{
+    background-image: linear-gradient(to right , #a517ba , #5f1782);
+    padding: 0 !important;
+}
+.navbar-brand img {
+    height: 40px;
+    padding-left: 20px  ;
+}
+.navbar-nav li {
+padding: 0 16px;
+}
+.navbar-nav li a{
+    color: white !important;
+    font-weight: 600;
+}
+/* .navbar-toggler{
+    outline: none !important;
+} */
+  /*-----------------selection-banner----------------------*/
+#banner{
+      background-image:linear-gradient(to right , #a517ba , #5f1782); 
+      color: #fff;
+      padding-top: 5%;
+  }
+  .play-btn{
+      width: 45px;
+      margin: 20px;
+  }
+  #banner a{
+      text-decoration: none;
+      color: #fff;
+  }
+.bottom-btn{
+    width: 100%;
+}
