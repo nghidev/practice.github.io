@@ -23,9 +23,9 @@ padding: 0 16px;
     color: white !important;
     font-weight: 600;
 }
-/* .navbar-toggler{
+ .navbar-toggler{
     outline: none !important;
-} */
+} 
   /*-----------------selection-banner----------------------*/
 #banner{
       background-image:linear-gradient(to right , #a517ba , #5f1782); 
@@ -41,5 +41,5 @@ padding: 0 16px;
       color: #fff;
   }
 .bottom-btn{
-    width: 100%;
+    wid
 }
