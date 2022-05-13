@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+     <div id="login">
+    
+        <h1>Đăng nhập</h1>
+
+        <div>
+            <input  type="text" value="mor_2314" class="form-control" id="user" name="user" placeholder="123" required >
+            <label for="floatingEmail">User</label>
+        </div>
+
+        <div>
+            <input type="password" value="83r5^_" class="form-control" id="pass" name="password"
+                placeholder="123" required>
+            <label for="pass">Mật khẩu</label>
+        </div>
+        <span id="my-message"></span>
+
+        <button onclick="login()">Đăng nhập</button>
+        
+</div>
+     <script>
+        function createUser(){
+            // API needs to be passed with "Authorization" header as Bearer token
+            // var token = localStorage.getItem("token")
+            var token = "a27c3088201a3ce1cea9aad603e8bea071b2e3cea88b60d09ab1f18c4ceb43c4";
+            var settings = {
+                "url": "https://gorest.co.in/public/v2/users",
+                "method": "POST",
+                "timeout": 0,
+                "headers": {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json",
+                    "Authorization": "Bearer "+ token
+                },
+                "data": JSON.stringify({
+                    "name": "Chien Le",
+                    "gender": "male",
+                    "email": "thai.nghi@gmail.com",
+                    "status": "active"
+                }),
+                };
+
+                $.ajax(settings).done(function (response) {
+                console.log(response);
+                });
+            }
+    </script>
+</body>
+</html>

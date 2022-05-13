@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="menu">
+            <a href="host_page.html" rel="noopener noreferrer">Trang chủ</a>
+            <a href="host_page.html" rel="noopener noreferrer">Sản phẩm</a>
+            <a href="contact.html" rel="noopener noreferrer">Liên hệ</a>
+            <a href="create-user.html" rel="noopener noreferrer">Đăng ký</a>
+        </div>
+        <div class="header_navbar-search">
+            <div class="header_navbar-search-item">
+                <input value="" type="text" class="header_navbar-search-ip"
+                    placeholder="Tìm tên ấn phẩm , tên tác giả mà bạn mong muốn....." id="search_book">
+                <span class="header_navbar-search-tk"><a href="" id="find_book" > Tim kiem</a></span>
+                <!-- <ul class="list-group" id="result"></ul> -->
+            </div>
+        </div>
+        <div class="row text-center text-balck mb-5">
+            <div class="col-lg-7 mx-auto">
+                <h1 class="display-4" id="text-search" >Kết quả tìm kiếm</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div id="paging"></div>
+                <!-- List group-->
+                <ul class="list-group shadow" id="show">
+                    <!-- list group item-->
+
+                </ul>
+                
+            </div>
+            <!-- </div><img  src="https://i.imgur.com/6IUbEME.jpg" alt="Generic placeholder image" width="200"
+            class="ml-lg-5 order-1 order-lg-2"> -->
+        </div> <!-- End -->
+        </li> <!-- End -->
+        </ul> <!-- End -->
+    </div>
+   
+    <script>
+        $(document).ready(function () {
+            var url_string = window.location.href
+            var url = new URL(url_string)
+            var result = url.searchParams.get('result')
+            $('#text-search').html(`Kết quả tìm kiếm cho '${result}'`)
+              console.log(result)
+            var get_url = 'https://api.itbook.store/1.0/search/' + result
+            console.log(get_url)
+            var setting = {
+                url: get_url,
+                method: 'get',
+
+            }
+            $.ajax(setting).done(function (response) {
+                console.log(response.total);
+                var numPage = response.total/10
+                var tam
+                response.books.forEach(items => {
+                    tam = `<li class="list-group-item">
+                        <!-- Custom content-->
+                        <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                            <div class="media-body order-2 order-lg-1">
+                                <h5 class="mt-0 font-weight-bold mb-2">${items.title}</h5>
+                                <h4 class="font-italic text-muted mb-0 small">Book code: ${items.isbn13}</h4>
+                                <p class="font-italic text-muted mb-0 small">${items.subtitle}</p>
+                                <div class="d-flex align-items-center justify-content-between mt-1">
+                                    <h6 class="font-weight-bold my-2">${items.price}</h6>
+                                    <ul class="list-inline small">
+                                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                        <li class="list-inline-item m-0"><i class="fa fa-star-o text-gray"></i></li>
+                                    </ul>
+                                </div>
+                            </div><img src="${items.image}" alt="Generic placeholder image" width="200"
+                                class="ml-lg-5 order-1 order-lg-2">
+                        </div> <!-- End -->
+                    </li>`
+                    // console.log(tam)
+                    $('#show').append(tam)
+
+                })
+                for (let page = 1; page <= numPage; page++) {
+                    var url_string = window.location.href
+                    var url = new URL(url_string);
+                    var result = url.searchParams.get("result");
+                    var keyword = result.split('/')[0]
+                    //console.log(result.split('/'));
+                    var get_url = 'search_result.html?result=' + keyword + '/' + page
+                    $('#paging').append('<a href="'+get_url+'">' + page + ' | </a>')
+                    
+                }
+                
+            })
+
+            $("#find_book").click(function () {
+                var result = $('#search_book').val().trim()
+                $("#find_book").attr("href", `search_result.html?result=${result}`);
+            });
+        })
+    </script>
+
+</body>
+
+</html>

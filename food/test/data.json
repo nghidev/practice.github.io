@@ -1,0 +1,324 @@
+[
+    
+        {
+            "title": "Microsoft Excel Inside Out",
+            "subtitle": "Office 2021 and Microsoft 365",
+            "isbn13": "9780137559534",
+            "price": "$42.16",
+            "image": "https://itbook.store/img/books/9780137559534.png",
+            "url": "https://itbook.store/books/9780137559534"
+        },
+        {
+            "title": "Windows Internals, Part 2, 7th Edition",
+            "subtitle": "",
+            "isbn13": "9780135462409",
+            "price": "$53.49",
+            "image": "https://itbook.store/img/books/9780135462409.png",
+            "url": "https://itbook.store/books/9780135462409"
+        },
+        {
+            "title": "Microsoft Office Inside Out",
+            "subtitle": "Office 2021 and Microsoft 365",
+            "isbn13": "9780137564095",
+            "price": "$36.93",
+            "image": "https://itbook.store/img/books/9780137564095.png",
+            "url": "https://itbook.store/books/9780137564095"
+        },
+        {
+            "title": "Microsoft Excel Step by Step",
+            "subtitle": "Office 2021 and Microsoft 365",
+            "isbn13": "9780137564279",
+            "price": "$30.62",
+            "image": "https://itbook.store/img/books/9780137564279.png",
+            "url": "https://itbook.store/books/9780137564279"
+        },
+        {
+            "title": "Microsoft Excel Data Analysis and Business Modeling, 7th Edition",
+            "subtitle": "Office 2021 and Microsoft 365",
+            "isbn13": "9780137613663",
+            "price": "$34.87",
+            "image": "https://itbook.store/img/books/9780137613663.png",
+            "url": "https://itbook.store/books/9780137613663"
+        },
+        {
+            "title": "Intermediate Statistics with R",
+            "subtitle": "",
+            "isbn13": "1001651662833",
+            "price": "$0.00",
+            "image": "https://itbook.store/img/books/1001651662833.png",
+            "url": "https://itbook.store/books/1001651662833"
+        },
+        {
+            "title": "Professional Scrum Development with Azure DevOps",
+            "subtitle": "",
+            "isbn13": "9780136789239",
+            "price": "$39.99",
+            "image": "https://itbook.store/img/books/9780136789239.png",
+            "url": "https://itbook.store/books/9780136789239"
+        },
+        {
+            "title": "Developing Microservices Architecture on Microsoft Azure with Open Source Technologies",
+            "subtitle": "",
+            "isbn13": "9780136819387",
+            "price": "$41.93",
+            "image": "https://itbook.store/img/books/9780136819387.png",
+            "url": "https://itbook.store/books/9780136819387"
+        },
+        {
+            "title": "Begin to Code with JavaScript",
+            "subtitle": "",
+            "isbn13": "9780136870722",
+            "price": "$19.11",
+            "image": "https://itbook.store/img/books/9780136870722.png",
+            "url": "https://itbook.store/books/9780136870722"
+        },
+        {
+            "title": "Microsoft Azure Data Solutions",
+            "subtitle": "An Introduction",
+            "isbn13": "9780137252503",
+            "price": "$36.23",
+            "image": "https://itbook.store/img/books/9780137252503.png",
+            "url": "https://itbook.store/books/9780137252503"
+        },
+        {
+            "title": "Ansible Succinctly",
+            "subtitle": "",
+            "isbn13": "9781642002164",
+            "price": "$0.00",
+            "image": "https://itbook.store/img/books/9781642002164.png",
+            "url": "https://itbook.store/books/9781642002164"
+        },
+        {
+            "title": "Bash Guide",
+            "subtitle": "",
+            "isbn13": "1001651514138",
+            "price": "$0.00",
+            "image": "https://itbook.store/img/books/1001651514138.png",
+            "url": "https://itbook.store/books/1001651514138"
+        },
+        {
+            "title": "Taking Kubernetes from Test to Production",
+            "subtitle": "Improving Resilience, Visibility, and Security with Traffic Management Tools",
+            "isbn13": "1001651514256",
+            "price": "$0.00",
+            "image": "https://itbook.store/img/books/1001651514256.png",
+            "url": "https://itbook.store/books/1001651514256"
+        },
+        {
+            "title": "Powerful Command-Line Applications in Go",
+            "subtitle": "Build Fast and Maintainable Tools",
+            "isbn13": "9781680506969",
+            "price": "$41.41",
+            "image": "https://itbook.store/img/books/9781680506969.png",
+            "url": "https://itbook.store/books/9781680506969"
+        },
+        {
+            "title": "Pythonic Programming",
+            "subtitle": "Tips for Becoming an Idiomatic Python Programmer",
+            "isbn13": "9781680508611",
+            "price": "$16.98",
+            "image": "https://itbook.store/img/books/9781680508611.png",
+            "url": "https://itbook.store/books/9781680508611"
+        },
+        {
+            "title": "Go Brain Teasers",
+            "subtitle": "Exercise Your Mind",
+            "isbn13": "9781680508994",
+            "price": "$13.76",
+            "image": "https://itbook.store/img/books/9781680508994.png",
+            "url": "https://itbook.store/books/9781680508994"
+        },
+        {
+            "title": "Python Brain Teasers",
+            "subtitle": "Exercise Your Mind",
+            "isbn13": "9781680509007",
+            "price": "$18.95",
+            "image": "https://itbook.store/img/books/9781680509007.png",
+            "url": "https://itbook.store/books/9781680509007"
+        },
+        {
+            "title": "Pandas Brain Teasers",
+            "subtitle": "Exercise Your Mind",
+            "isbn13": "9781680509014",
+            "price": "$8.28",
+            "image": "https://itbook.store/img/books/9781680509014.png",
+            "url": "https://itbook.store/books/9781680509014"
+        },
+        {
+            "title": "Flutter UI Succinctly",
+            "subtitle": "",
+            "isbn13": "9781642002195",
+            "price": "$0.00",
+            "image": "https://itbook.store/img/books/9781642002195.png",
+            "url": "https://itbook.store/books/9781642002195"
+        },
+        {
+            "title": "Developing Graphics Frameworks with Python and OpenGL",
+            "subtitle": "",
+            "isbn13": "9781032021461",
+            "price": "$0.00",
+            "image": "https://itbook.store/img/books/9781032021461.png",
+            "url": "https://itbook.store/books/9781032021461"
+        },
+        {
+            "title": "Practical MongoDB",
+            "subtitle": "Architecting, Developing, and Administering MongoDB",
+            "isbn13": "9781484206485",
+            "price": "$41.57",
+            "image": "https://itbook.store/img/books/9781484206485.png",
+            "url": "https://itbook.store/books/9781484206485"
+        },
+        {
+            "title": "The Definitive Guide to MongoDB, 3rd Edition",
+            "subtitle": "A complete guide to dealing with Big Data using MongoDB",
+            "isbn13": "9781484211830",
+            "price": "$49.99",
+            "image": "https://itbook.store/img/books/9781484211830.png",
+            "url": "https://itbook.store/books/9781484211830"
+        },
+        {
+            "title": "MongoDB Performance Tuning",
+            "subtitle": "Optimizing MongoDB Databases and their Applications",
+            "isbn13": "9781484268780",
+            "price": "$37.24",
+            "image": "https://itbook.store/img/books/9781484268780.png",
+            "url": "https://itbook.store/books/9781484268780"
+        },
+        {
+            "title": "MongoDB in Action, 2nd Edition",
+            "subtitle": "Covers MongoDB version 3.0",
+            "isbn13": "9781617291609",
+            "price": "$19.99",
+            "image": "https://itbook.store/img/books/9781617291609.png",
+            "url": "https://itbook.store/books/9781617291609"
+        },
+        {
+            "title": "Pentaho Analytics for MongoDB",
+            "subtitle": "Combine Pentaho Analytics and MongoDB to create powerful analysis and reporting solutions",
+            "isbn13": "9781782168355",
+            "price": "$16.99",
+            "image": "https://itbook.store/img/books/9781782168355.png",
+            "url": "https://itbook.store/books/9781782168355"
+        },
+        {
+            "title": "Pentaho Analytics for MongoDB Cookbook",
+            "subtitle": "Over 50 recipes to learn how to use Pentaho Analytics and MongoDB to create powerful analysis and reporting solutions",
+            "isbn13": "9781783553273",
+            "price": "$35.99",
+            "image": "https://itbook.store/img/books/9781783553273.png",
+            "url": "https://itbook.store/books/9781783553273"
+        },
+        {
+            "title": "Web Development with MongoDB and NodeJS, 2nd Edition",
+            "subtitle": "Build an interactive and full-featured web application from scratch using Node.js and MongoDB",
+            "isbn13": "9781785287527",
+            "price": "$38.01",
+            "image": "https://itbook.store/img/books/9781785287527.png",
+            "url": "https://itbook.store/books/9781785287527"
+        },
+        {
+            "title": "MongoDB Cookbook, 2nd Edition",
+            "subtitle": "Harness the latest features of MongoDB 3 with this collection of 80 recipes - from managing cloud platforms to app development, this book is a vital resource",
+            "isbn13": "9781785289989",
+            "price": "$44.99",
+            "image": "https://itbook.store/img/books/9781785289989.png",
+            "url": "https://itbook.store/books/9781785289989"
+        },
+        {
+            "title": "The Little MongoDB Book",
+            "subtitle": "",
+            "isbn13": "1001592208320",
+            "price": "$0.00",
+            "image": "https://itbook.store/img/books/1001592208320.png",
+            "url": "https://itbook.store/books/1001592208320"
+        },
+        {
+            "title": "Learning MongoDB",
+            "subtitle": "",
+            "isbn13": "1001629462276",
+            "price": "$0.00",
+            "image": "https://itbook.store/img/books/1001629462276.png",
+            "url": "https://itbook.store/books/1001629462276"
+        },
+        {
+            "title": "LOVE for Lua Game Programming",
+            "subtitle": "Master the Lua programming language and build exciting strategy-based games in 2D using the LOVE framework",
+            "isbn13": "9781782161608",
+            "price": "$17.99",
+            "image": "https://itbook.store/img/books/9781782161608.png",
+            "url": "https://itbook.store/books/9781782161608"
+        },
+        {
+            "title": "Linux in a Nutshell, 6th Edition",
+            "subtitle": "",
+            "isbn13": "9780596154486",
+            "price": "$34.99",
+            "image": "https://itbook.store/img/books/9780596154486.png",
+            "url": "https://itbook.store/books/9780596154486"
+        },
+        {
+            "title": "Linux System Programming, 2nd Edition",
+            "subtitle": "Talking Directly to the Kernel and C Library",
+            "isbn13": "9781449339531",
+            "price": "$25.12",
+            "image": "https://itbook.store/img/books/9781449339531.png",
+            "url": "https://itbook.store/books/9781449339531"
+        },
+        {
+            "title": "Developing Games on the Raspberry Pi",
+            "subtitle": "App Programming with Lua and LOVE",
+            "isbn13": "9781484241691",
+            "price": "$16.50",
+            "image": "https://itbook.store/img/books/9781484241691.png",
+            "url": "https://itbook.store/books/9781484241691"
+        },
+        {
+            "title": "Efficient R Programming",
+            "subtitle": "A Practical Guide to Smarter Programming",
+            "isbn13": "9781491950784",
+            "price": "$21.49",
+            "image": "https://itbook.store/img/books/9781491950784.png",
+            "url": "https://itbook.store/books/9781491950784"
+        },
+        {
+            "title": "Land the Tech Job You Love",
+            "subtitle": "",
+            "isbn13": "9781934356265",
+            "price": "$10.69",
+            "image": "https://itbook.store/img/books/9781934356265.png",
+            "url": "https://itbook.store/books/9781934356265"
+        },
+        {
+            "title": "The JavaScript Way",
+            "subtitle": "A gentle introduction to an essential language",
+            "isbn13": "1001591178660",
+            "price": "$0.00",
+            "image": "https://itbook.store/img/books/1001591178660.png",
+            "url": "https://itbook.store/books/1001591178660"
+        },
+        {
+            "title": "Raspberry Pi Projects Book, Volume 5",
+            "subtitle": "",
+            "isbn13": "1001591779911",
+            "price": "$0.00",
+            "image": "https://itbook.store/img/books/1001591779911.png",
+            "url": "https://itbook.store/books/1001591779911"
+        },
+        {
+            "title": "Git Internals",
+            "subtitle": "Source code control and beyond",
+            "isbn13": "1001643027200",
+            "price": "$0.00",
+            "image": "https://itbook.store/img/books/1001643027200.png",
+            "url": "https://itbook.store/books/1001643027200"
+        },
+        {
+            "title": "The Agile Culture",
+            "subtitle": "Leading through Trust and Ownership",
+            "isbn13": "9780321940148",
+            "price": "$25.99",
+            "image": "https://itbook.store/img/books/9780321940148.png",
+            "url": "https://itbook.store/books/9780321940148"
+        }
+    
+    ]   

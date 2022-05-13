@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="header_navbar">
+            <div class="header_navbar-img">
+                <span class="header_navbar-img-logo">
+                    <img src="https://salt.tikicdn.com/ts/upload/ae/f5/15/2228f38cf84d1b8451bb49e2c4537081.png" alt=""
+                        class="header_navbar-img-item">
+                </span>
+                <!-- <span class="header_navbar-img-free">
+                    <img src="https://salt.tikicdn.com/ts/upload/e5/1d/22/61ff572362f08ead7f34ce410a4a6f96.png" alt="">
+                </span> -->
+            </div>
+            <div class="header_navbar-search">
+                <div class="header_navbar-search-item">
+                    <input value="" type="text" class="header_navbar-search-ip"
+                        placeholder="Tìm tên ấn phẩm , tên tác giả mà bạn mong muốn....." id="search_book">
+                    <span class="header_navbar-search-tk"><a href="" id="find_book"> Tim kiem</a></span>
+                    <!-- <ul class="list-group" id="result"></ul> -->
+                </div>
+            </div>
+            <div class="header_navbar-login">
+                <button type="button" class="btn btn-outline-primary text-dark"><a href="login.html">Đăng nhập</a>
+                </button>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="host_page.html" rel="noopener noreferrer">Trang chủ</a>
+            <a href="host_page.html" rel="noopener noreferrer">Sản phẩm</a>
+            <a href="contact.html" rel="noopener noreferrer">Liên hệ</a>
+            <a href="create-user.html" rel="noopener noreferrer">Đăng ký</a>
+        </div>
+    </div>
+    <div class="grid1">
+        <div class="grid2">
+
+            <div class="container py-5">
+                <div class="row text-center text-balck mb-5">
+                    <div class="col-lg-7 mx-auto">
+                        <p class="display-4">"Các ấn phẩm mới năm 2022"</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!-- List group-->
+                        <ul class="list-group shadow" id="nhan">
+                            <!-- list group item-->
+
+                        </ul>
+                    </div>
+                    <!-- </div><img  src="https://i.imgur.com/6IUbEME.jpg" alt="Generic placeholder image" width="200"
+                    class="ml-lg-5 order-1 order-lg-2"> -->
+                </div> <!-- End -->
+                </li> <!-- End -->
+                </ul> <!-- End -->
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+
+        fetch('https://fakestoreapi.com/users',{
+            method:"POST",
+            body:JSON.stringify(
+                {
+                    email:'phanthainghi@gmail.com',
+                    username:'ptnghi',
+                    password:'Nghi@123',
+                    name:{
+                        firstname:'Phan Thai',
+                        lastname:'Nghi'
+                    },
+                    address:{
+                        city:'Can Tho',
+                        street:'3 thang 2',
+                        number:3,
+                        zipcode:'9000',
+                        geolocation:{
+                            lat:'-37.3159',
+                            long:'81.1496'
+                        }
+                    },
+                    phone:'0909000000'
+                }
+            )
+        }).then(res=>res.json()).then(json=>console.log(json))
+
+
+        var url = 'https://api.itbook.store/1.0/new'
+        var setting = {
+            url: url,
+            method: 'get',
+
+        }
+        $.ajax(setting).done(function (item) {
+            console.log(item)
+            var result
+            item.books.forEach(items => {
+
+                result = `<li class="list-group-item">
+                                <!-- Custom content-->
+                                <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                                    <div class="media-body order-2 order-lg-1">
+                                        <h5 class="mt-0 font-weight-bold mb-2" ><a href="detail.html?isbn13=${items.isbn13}">${items.title}</a></h5>
+                                        <p class="font-italic text-muted mb-0 small">${items.subtitle}</p>
+                                        <div class="d-flex align-items-center justify-content-between mt-1">
+                                            <h6 class="font-weight-bold my-2">${items.price}</h6>
+                                            <ul class="list-inline small">
+                                                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                                                <li class="list-inline-item m-0"><i class="fa fa-star-o text-gray"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div><img src="${items.image}" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+                                </div> <!-- End -->
+                            </li> <!-- End -->`
+                $(`#nhan`).append(result)
+            })
+
+            // console.log(result)
+        })
+
+        /*
+           func search by 
+        */
+        $("#find_book").click(function () {
+            var result = $('#search_book').val().trim()
+            $("#find_book").attr("href", `search_result.html?result=${result}`);
+        });
+
+        $("#search_book").keyup(function(event) {
+            if (event.keyCode === 13) {
+                var result = $('#search_book').val().trim()
+                $("#find_book").attr("href", `search_result.html?result=${result}`);
+                window.location.href = $("#find_book").attr("href");
+                // $("#find_book").click();
+                
+            }
+        });
+    })
+    // function search(){
+    //     var search = $('#search_book').val().trim()
+    //     // console.log(search)
+    //     $("#nhan_bien").attr("href", `search_result.html?bien=20`)
+
+    // }
+// sho ra phan goi y
+    // $(document).ready(function () {
+    //     $.ajaxSetup({ cache: false });
+    //     $('#search').keyup(function () {
+    //         $('#result').html('');
+    //         // $('#state').val('');
+    //         var searchField = $('#search').val();
+    //         var expression = new RegExp(searchField, "i");
+    //         $.getJSON('data.json', function (data) {
+    //             $.each(data, function (key, value) {
+    //                 if (value.title.search(expression) != -1) {
+    //                     $('#result').append('<li class="list-group-item link-class"><img src="' + value.image + '" height="40" width="40" class="img-thumbnail" /> ' + value.title + ' | <span class="text-muted">' + value.location + '</span></li>');
+    //                 }
+    //             });
+    //         });
+    //     });
+
+    //     $('#result').on('click', 'li', function () {
+    //         var click_text = $(this).text().split('|');
+    //         $('#search').val($.trim(click_text[0]));
+    //         $("#result").html('');
+    //     });
+    // });
+</script>
+
+</html>

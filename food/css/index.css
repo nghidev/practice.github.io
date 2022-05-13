@@ -1,0 +1,548 @@
+/* Base --------------------------------------------------------------------*/
+@font-face {
+    font-family: Dosis_extralight;
+    src: url(../font/Dosis/Dosis-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Dosis_light;
+    src: url(../font/Dosis/Dosis-Light.ttf);
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../font/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: Dosis_light;
+    background-color: rgb(37, 37, 37);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar ------------------------------------------------------------------*/
+.navbar {
+    background-color: rgb(41, 41, 41);
+    height: 120px;
+    border-bottom: 4px solid rgb(184, 184, 77);
+    padding: 0 120px;
+    z-index: 10000;
+}
+
+.navbar.bg-light {
+    background-color: rgb(41, 41, 41) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(209, 209, 209) !important;
+}
+
+.navbar-brand {
+    margin-right: 50px !important;
+}
+
+.form-control.me-2 {
+    border-radius: 100px ;
+    outline: none;
+    border: unset !important;
+    box-shadow: none !important;
+    letter-spacing: 1px;
+    background-color: rgb(32, 32, 32);
+    box-shadow: inset 0.5px 0.5px 6px black !important;
+    color: white;
+    padding: 0 20px 0 20px !important;
+
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px !important;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: rgb(128, 128, 128) !important;
+    transition: ease-in-out 0.1s;
+}
+
+
+.navbar-nav .nav-item a:hover .quantity{
+    color: rgb(128, 128, 128) !important;
+    transition: ease-in-out 0.1s;
+}
+
+.btn-outline-success {
+    border-color: transparent !important;
+    box-shadow: none !important;
+    transition: ease-in-out 0.1s;
+}
+
+.navbar.bg-light {
+    margin-top: 0 !important;
+}
+
+#gioHang {
+    display: inline-block;
+}
+
+.quantity {
+    color: rgb(209, 209, 209) !important;
+
+}
+
+.signOff.on {
+    display: inline-block;
+}
+
+.signOff.off {
+    display: none;
+}
+
+.signOn.on {
+    display: inline-block;
+}
+
+.signOn.off {
+    display: none;
+}
+
+
+/* Category --------------------------------------------------------*/
+
+.navbar-expand-lg .navbar-nav {
+    margin-left: auto;
+}
+
+.me-auto {
+    margin-right: 30px !important;
+}
+
+.dropdown-menu li a{
+    color: rgb(221, 221, 221) !important;
+    text-decoration: none;
+    display: block;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    margin: 10px 0 10px 20px;
+    padding: 0 !important;
+}
+
+.dropdown-menu {
+    background-color: rgb(24, 24, 24) !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: transparent !important;
+
+}
+
+
+
+.container-fluid {
+    background-color: rgb(41, 41, 41);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent !important;
+}
+
+.bars-icon {
+    color: rgb(190, 190, 190);
+}
+
+.navbar-toggler.collapsed {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+
+}
+
+/* Body trang chủ -----------------------------------------------------*/
+
+
+.title-container p{
+    text-transform: uppercase;
+
+}
+.home-body {
+    margin-top: 170px;
+    justify-content: space-around; 
+
+}
+
+
+.body-title {
+    color: rgb(117, 246, 255) !important;
+    font-size: 1.2rem;
+}
+
+.title-container {
+    margin-bottom: 20px;
+    border-bottom: solid 2px rgb(102, 1, 1);
+}
+
+.card {
+    background-color: rgb(24, 24, 24);
+    min-height: 490px;
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+.img-detail {
+    width: 100%;
+}
+
+.card-title {
+    text-transform: uppercase;
+    color: rgb(117, 246, 255);
+    /* font-size: 1rem; */
+    /* white-space: nowrap; */
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    margin-bottom: 18px;
+
+}
+
+.card-title1 {
+    text-transform: uppercase;
+    color: rgb(117, 246, 255);
+
+    margin-bottom: 18px;
+
+}
+
+.card-des {
+  
+    color: rgb(180, 180, 180);
+    font-size: 1rem;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+}
+
+.card-des-cart {
+  
+    color: rgb(180, 180, 180);
+    font-size: 1rem;
+    margin: auto auto 15px auto;  
+
+}
+
+.card-des-detail {
+  
+    color: rgb(180, 180, 180);
+    font-size: 1.5rem;
+}
+
+.card-price {
+    color: rgb(219, 213, 118);
+    margin: auto auto 15px auto;  
+}
+
+.card-price-cart {
+    color: rgb(219, 213, 118);
+    margin: auto auto 15px auto;  
+}
+
+.card-price-detail {
+    color: rgb(219, 213, 118);
+    margin: auto auto 15px auto;  
+    font-size: 1.3rem !important;
+}
+
+
+.card-margin {
+    margin-bottom: 35px;
+}
+
+
+
+/* Phân trang --------------------------------------------------------*/
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.page-link {
+    padding: 0.375rem 1.5rem;
+    background-color: rgb(24, 24, 24);
+    color: rgb(223, 223, 223);
+    border: 0;
+}
+
+.border-1 {
+    border-left: 1px solid rgb(39, 39, 39);
+    border-right: 1px solid rgb(39, 39, 39);
+
+}
+
+.page-item:not(:first-child) .page-link {
+     margin-left: 0; 
+}
+
+.page-link:focus {
+    box-shadow: none;
+}
+
+
+
+
+/* Footer -------------------------------------------------------*/
+.bg-light {
+  background-color: rgb(26, 26, 26)  !important;
+  margin-top: 100px !important;
+}
+
+.title-footer  {
+    color: rgb(224, 224, 224) !important;
+}
+
+.list-unstyled .mb-2 a {
+    text-decoration: none !important;
+    color: rgb(33, 138, 170);
+}
+
+.logo-footer {
+    width: 150px;
+}
+
+
+
+/* Sign in ----------------------------------------------------------*/
+.home-body1 {
+    margin-top: 150px;
+    justify-content: space-around; 
+
+}
+
+.home-body2 {
+    /* margin-top: 150px; */
+    justify-content: space-around; 
+
+}
+
+.form-signup form {
+    text-align: center;
+}
+
+.form-signin form {
+    text-align: center;
+}
+
+.signin-title {
+    color: white;
+}
+
+.remember-check {
+    color: whitesmoke;
+    margin: 20px 0 10px 0;
+}
+
+.form-floating {
+    margin-bottom: 9px;
+}
+
+.mt-5.mb-3.text-muted {
+    /* margin: 40px 0 0 0 !important; */
+    display: block;
+    text-decoration: none;
+}
+
+.my_btn {
+    margin-top: 14px !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#my-message {
+    color: rgb(249, 255, 158);
+    display: block;
+    margin: 10px 0;
+}
+
+.mt-5 {
+    margin-top: 14px !important;
+}
+
+.sign-up-btn, .sign-in-btn {
+    background-color: rgb(196, 196, 196);
+    padding: 6px 0;
+    width: 40%;
+    /* margin: 0 100px 0 100px !important; */
+    margin: 20px auto;
+    border-radius: 4px;
+    color: rgb(3, 3, 3) !important;
+    transition: ease-in-out 0.15s;
+}
+
+.sign-up-btn:hover, .sign-in-btn:hover {
+    background-color: rgb(255, 255, 255);
+
+} 
+
+
+
+
+/* User Profile --------------------------------------------------------------*/
+
+.user-profile p{
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.user-profile h2{
+    color: rgb(238, 255, 1);
+    margin-bottom: 40px;
+}
+
+
+/* Giỏ hàng -------------------------------------------------------------------*/
+
+.cart-container h2 {
+    color: rgb(251, 255, 0);
+    /* text-align: center; */
+    margin-bottom: 45px;
+}
+
+#cart-notice p, #cart-notice span {
+    color: white;
+    font-size: 1.5rem;
+    /* text-align: center; */
+}
+
+.cart-total {
+    color: white;
+    /* display: inline-block; */
+    font-size: 1.5rem;
+}
+
+.cart-title {
+    color: rgb(79, 185, 255);
+    /* display: inline-block; */
+    font-size: 1.5rem;
+}
+
+.add-to-cart {
+    text-decoration: none;
+    color: #79f6ff;
+    display: inline-block;
+    text-align: right;
+    cursor: pointer;
+
+}
+
+.delete-from-cart {
+    text-decoration: none;
+    color: #79f6ff;
+    display: inline-block;
+    text-align: right;
+    cursor: pointer;
+}
+
+.cart-table {
+    color: white;
+}
+
+.buy {
+    color: rgb(255, 255, 255);
+    background-color: rgb(54, 122, 88);
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    margin: 0 auto 25px auto;
+    border-radius: 5px;
+}
+
+.buy:hover {
+    opacity: 80%;
+}
+
+.confirm-button {
+    width: 100%;
+    background-color: rgb(52, 108, 110);
+    border-radius: 9px;
+    padding: 9px 30px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    text-transform: uppercase;
+}
+
+.confirm-button:hover {
+    opacity: 80%;
+    transition: ease-in-out 0.15s;
+}
+
+
+
+.order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* border-top:1px solid rgb(73, 73, 73) ; */
+    border-bottom:1px solid rgb(73, 73, 73) ;
+    padding: 15px 0;
+}
+
+
+.detail-order {
+    color: white;
+    margin-left: 50px;
+}
+
+.detail-order-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/* Chi tiết sản phẩm -------------------------------------------------------------------*/
+
+.card-detail {
+    text-decoration: none;
+    color: rgb(79, 255, 152);
+    /* margin-right: auto; */
+    display: block;
+    cursor: pointer;
+
+}
+
+.add-to-cart:hover, .card-detail:hover, .delete-from-cart:hover {
+    /* color: unset !important; */
+    opacity: 80% !important;
+    transition: ease-in-out 0.15s;
+}
+

@@ -1,0 +1,10 @@
+/* tr{
+    margin: 50px
+} */
+table{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+    border: 1px solid;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+     <div id="detail"></div>
+     <script>
+         $(document).ready(function(){
+            var url_string = window.location.href
+            var url = new URL(url_string);
+            var isbn13 = url.searchParams.get("isbn13");
+            //var id = 7;
+            var settings = {
+                "url": "https://api.itbook.store/1.0/books/"+isbn13,
+                "method": "GET",
+            };
+
+            $.ajax(settings).done(function (response) {
+                console.log(response.title);
+                var content = `<h2>${response.publisher} ${response.authors}</h2>
+    <h5>${response.price}</h5>
+    <div class="fakeimg" style="height:200px;"><img src="${response.image}" alt=""></div>
+    `;
+                $(`#detail`).html(content)
+            });
+
+    
+        })
+    </script>
+</body>
+</html>
